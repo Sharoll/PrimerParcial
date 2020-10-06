@@ -12,6 +12,8 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PersonaConsultaComponent } from './Ayuda/persona-consulta/persona-consulta.component';
 import { PersonaRegistroComponent } from './Ayuda/persona-registro/persona-registro.component';
+import { PersonaService } from './services/persona.service';
+import { FooterComponent } from './Ayuda/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,7 @@ import { PersonaRegistroComponent } from './Ayuda/persona-registro/persona-regis
     FetchDataComponent,
     PersonaConsultaComponent,
     PersonaRegistroComponent,
+    FooterComponent,
     
   ],
   imports: [
@@ -35,7 +38,7 @@ import { PersonaRegistroComponent } from './Ayuda/persona-registro/persona-regis
     ]),
     AppRoutingModule
   ],
-  providers: [],
+  providers: [PersonaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

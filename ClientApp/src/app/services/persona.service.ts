@@ -9,7 +9,7 @@ export class PersonaService {
   constructor() { }
 
   get(): Persona[] {
-        return JSON.parse(localStorage.getItem('datos'));
+        return JSON.parse(localStorage.getItem('informacion'));
       }
     post(persona: Persona) {
           let personas: Persona[] = [];
@@ -17,6 +17,6 @@ export class PersonaService {
             personas = this.get();
           }
           personas.push(persona);
-          localStorage.setItem('datos', JSON.stringify(personas));
+          localStorage.setItem('informacion', JSON.stringify(personas));
     }      
 }

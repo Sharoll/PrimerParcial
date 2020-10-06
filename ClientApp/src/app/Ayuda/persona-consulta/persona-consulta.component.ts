@@ -19,7 +19,7 @@ export class PersonaConsultaComponent implements OnInit {
   }
 
   get (){
-    //this.personas = this.personaService.get();
+    this.personas = this.personaService.get();
   }
 
 }
